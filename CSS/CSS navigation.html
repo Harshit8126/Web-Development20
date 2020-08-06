@@ -4,74 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navogtion</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
     <style>
-        .navbar {
-            background-color: rgb(95, 24, 6);
+        .navbar{
+            background-color: black;
             border-radius: 30px;
+            
         }
-
-        .navbar ul {
+        .navbar ul{
             overflow: auto;
         }
-
-        .navbar li {
-            float: left;
-            list-style: none;
+        .navbar li{
+            float:left;
+            list-style: none; 
             margin: 13px 20px;
-
+            
         }
-
-        .navbar li a {
+        .navbar li a{
             padding: 3px 3px;
             text-decoration: none;
             color: white;
         }
+        .navbar li a:hover{
+            color: red
+        }
         .search{
             float: right;
             color: white;
-            padding: 12px 75 px;
-            
+            padding: 12px 75px;
         }
         .navbar input{
             border: 2px solid black;
-            border-radius: 4px;
-            padding: 3px;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="https://google.com">
-                            Home
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://gla.ac.in">
-                            Contact Us
-                        </a>
-                    </li>
-                    <div class="search">
-                        <input type="text" name="search" id="search" placeholder="Search the website">
-                    </div>
-                </ul>
-            </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
         </nav>
     </header>
 </body>
